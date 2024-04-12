@@ -1,0 +1,1 @@
+sed -i 's|FROM images.houchangzao.com/tools/openjdk:11|FROM images.houchangzao.com/tools/ga-mysql-openjdk-11:20220906.140615|' Dockerfile

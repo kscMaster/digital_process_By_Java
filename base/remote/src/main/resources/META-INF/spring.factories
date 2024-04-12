@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.nancal.remote.config.FeignConfig,\
+  com.nancal.remote.config.ExceptionErrorDecoder
+
+
+

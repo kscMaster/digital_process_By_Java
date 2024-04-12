@@ -1,0 +1,10 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.nancal.auth.config.WebConfig,\
+  com.nancal.auth.aop.PreAuthorizeAspect,\
+  com.nancal.auth.interceptor.LoginInterceptor,\
+  com.nancal.auth.util.UserUtils
+
+
+
+
+

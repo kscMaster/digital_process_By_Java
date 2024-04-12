@@ -1,0 +1,1 @@
+ALTER TABLE gte4mfg_step ADD item_id VARCHAR(64) NULL  DEFAULT NULL ;

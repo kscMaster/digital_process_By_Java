@@ -1,0 +1,1 @@
+ALTER TABLE `lzdigit_rd_624`.`bomnode` CHANGE COLUMN `sequence` `sequence_no` int(11) NULL DEFAULT NULL;

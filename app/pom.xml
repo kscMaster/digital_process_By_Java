@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>digital_process</artifactId>
+        <groupId>com.nancal.model</groupId>
+        <version>20220328231656</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>library</module>
+        <module>myworkspace</module>
+        <module>msgbom</module>
+        <module>ebom</module>
+        <module>inspectionlibrary</module>
+        <module>home</module>
+        <module>dictsyndata</module>
+        <module>document</module>
+        <module>midbom</module>
+        <module>followmsgbom</module>
+        <module>plant</module>
+        <module>esop</module>
+        <module>mbom</module>
+        <module>libraryxdm</module>
+        <module>changeorder</module>
+        <module>imexport</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+</project>

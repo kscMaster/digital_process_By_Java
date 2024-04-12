@@ -1,0 +1,1 @@
+ALTER TABLE library_folder MODIFY COLUMN column_key text DEFAULT '' comment '显示列key';

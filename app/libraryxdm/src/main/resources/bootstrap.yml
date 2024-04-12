@@ -1,0 +1,43 @@
+server:
+  port: 80
+
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: lz624-library
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    # 环境配置
+    active: test
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: nacos248:8848
+        namespace: ${app.group:levault-v1-2}
+        register-enabled: false
+      config:
+        # 配置中心地址
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs[0]:
+          data-id: application-${spring.profiles.active}-lz624.${spring.cloud.nacos.config.file-extension}
+          group: DEFAULT_GROUP
+          refresh: true
+        timeout: 20000
+        enabled: true
+        max-retry: 10
+
+# 华为XDM基础配置
+delegate:
+  subAppId: rdm_hwkeymodeltest_app
+  domain: http://a0ec3992938846f9af25b4688b52c2ef.apic.cn-south-4.myhuaweicloudapis.com
+  userName: xupj
+  password: 2wsx1qaz
+  endpoint: https://iam.cn-south-4.myhuaweicloud.com
+  domainName: ruiyuan88

@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.nancal.redis.config.RedisConfig,\
+  com.nancal.redis.config.JacksonConfig,\
+  com.nancal.redis.service.RedisService
+
+

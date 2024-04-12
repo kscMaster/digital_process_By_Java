@@ -1,0 +1,1 @@
+ALTER TABLE `process_instance` ADD COLUMN process_title VARCHAR(128) AFTER `object_name`;
